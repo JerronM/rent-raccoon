@@ -1,20 +1,32 @@
 import React from 'react'
 import './Product.css'
+import { useStateValue } from "./StateProvider"
 
-
-function Product() {
+function Product({id, title, image, price}) {
+    const [{ basket }, dispatch] = useStateValue();
+    console.log("The basket >>>", basket)
+    const addToBasket = () => {
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                title: title,
+                image: image,
+                price: price,
+            },
+        });
+    };
     return (
         <div className="product">
-            <div className="product_info">
-                <p>Title Here</p>
+            <div className="product__info">
+                <p>{title}</p>
                 <p className="product__price">
-                   $50 per hour
+                    <strong><p>${price} per hour</p></strong>
                 </p>
             </div>
-                <img src="https://theoutdoortoycentre.co.uk/wp-content/uploads/2015/09/15-x-15-clown-a3.jpg"
-                alt=""
+                <img src={image}
                 />
-                <button>Rent Now</button>
+                <button onClick={addToBasket}>Rent Now</button>
             </div>
     );
 }

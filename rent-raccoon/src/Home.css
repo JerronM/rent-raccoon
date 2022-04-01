@@ -3,13 +3,13 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1500px;
+    max-width: 1900px;
 }
 
 
 .home__row{
     display: flex;
-    z-index: -1;
+    z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -18,16 +18,17 @@
     width: 100%;
     z-index: -1;
     margin-bottom: -150px;
+    max-height: 30%;
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 
 .home__name{
-    position: absolute;
-    top: 30%;
+    position: fixed;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 500%;
+    font-size: 100%;
 }
 
 .home__container{
