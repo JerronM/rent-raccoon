@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-end;
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
     width: 100%;
     max-height: 400px;
     min-width: 100px;
@@ -24,18 +24,18 @@
 
 
 .product > button{
-    background: #e22c2c;
+    background: #f0c14b;
     border: 1px solid;
-    margin-top: 10px;
-    border-color: black;
-    color: rgb(255, 255, 255);
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
 }
 
 .product__price{
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
-.product__info{
-    width: 100%;
+.product__info {
+    height: 100px;
     margin-bottom: 15px;
-}
+    text-align: center;
+  }

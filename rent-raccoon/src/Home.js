@@ -6,9 +6,20 @@ function Home() {
     return (
         <div className="home">
             <div className="home__container">
-                <p className="home__name">Rent Raccoon</p>
                 <img className="home__image"
                 src="https://images.pexels.com/photos/545065/pexels-photo-545065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""/>
+            <div className="home__row">
+                <Product
+                id="0000000001" 
+                title='Bouncy Castle: Monkey palace themed with slides ' 
+                price={50} 
+                image="https://ideas-for-kids-parties.com/wp-content/uploads/2019/11/bouncy-castle.jpg" />      
+                <Product 
+                id="0000000002" 
+                title='Rickenbacker 325 Electric Guitar: Fireglo finish & tripple pickups' 
+                price={75} 
+                image="https://cdn.shoplightspeed.com/shops/643427/files/30894336/1652x1652x1/rickenbacker-1967-rickenbacker-325-3-pickup.jpg" />      
+            </div>
             <div className="home__row">
                 <Product
                 id="0000000001" 
@@ -58,7 +69,7 @@ function Home() {
 
             </div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
